@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model IEnumerable<HangHoa>
+
+<partial name="VuTheNguyen_MainContent" model="Model" />
+
+
+@section Scripts{
+    <script>
+        $("ul li a").on('click',function(){
+            var id = $(this).attr("id")
+            $.ajax({
+                url: "/Home/HangHoaTheoLoai",
+                data: { maloaihang: id },
+                success: function (res) {
+                    $("#contentView").html(res)
+                }
+            })
+        })
+    </script>
+}
