@@ -28,12 +28,40 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/document/Ki 5/Lap Trinh Web/VuTheNguyen_211201947/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/document/Ki 5/Lap Trinh Web/VuTheNguyen_211201947/Views/Home/MatHang.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYXRIYW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/document/Ki 5/Lap Trinh Web/VuTheNguyen_211201947/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/document/Ki 5/Lap Trinh Web/VuTheNguyen_211201947/Views/Home/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/document/Ki 5/Lap Trinh Web/VuTheNguyen_211201947/Views/LoaiHangs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haUhhbmdzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/document/Ki 5/Lap Trinh Web/VuTheNguyen_211201947/Views/LoaiHangs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haUhhbmdzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/document/Ki 5/Lap Trinh Web/VuTheNguyen_211201947/Views/LoaiHangs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haUhhbmdzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/document/Ki 5/Lap Trinh Web/VuTheNguyen_211201947/Views/LoaiHangs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haUhhbmdzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/document/Ki 5/Lap Trinh Web/VuTheNguyen_211201947/Views/LoaiHangs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haUhhbmdzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/document/Ki 5/Lap Trinh Web/VuTheNguyen_211201947/Views/Shared/Components/LoaiHang/Default.cshtml]

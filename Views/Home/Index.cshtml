@@ -5,17 +5,39 @@
 @model IEnumerable<HangHoa>
 
 <partial name="VuTheNguyen_MainContent" model="Model" />
-
+<ul class="pagination">
+    @for (int i = 1; i <= ViewBag.PageNum; i++)
+    {
+        <li class="page-item" page="@i"
+        @(ViewBag.Mid != null ? "mid = '@ViewBag.Mid'" : "")
+        @(ViewBag.Keyword != null ? "keyword = '@ViewBag.Keyword'" : "")>
+            <a class="page-link">@i</a>
+        </li>
+    }
+</ul>
 
 @section Scripts{
     <script>
         $("ul li a").on('click',function(){
             var id = $(this).attr("id")
             $.ajax({
-                url: "/Home/HangHoaTheoLoai",
-                data: { maloaihang: id },
+                url: "/Home/Filter",
+                data: { id: id },
                 success: function (res) {
                     $("#contentView").html(res)
+                }
+            })
+        })
+        $('body').on('click', 'li.page-item', function (e) {
+            var page = $(this).attr("page");
+            var mid = $(this).attr("mid")
+            var data = { id: mid, pageIndex: page }
+            console.log(data)
+            $.ajax({
+                url: "/Home/Filter",
+                data: data,
+                success: function (res) {
+                    $("#contentView").html(res);
                 }
             })
         })

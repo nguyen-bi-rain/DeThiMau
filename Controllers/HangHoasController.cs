@@ -11,12 +11,11 @@ namespace VuTheNguyen_211201947.Controllers
 {
     public class HangHoasController : Controller
     {
-        
+        QLHangHoaContext _context = new QLHangHoaContext();
 
         // GET: HangHoas
         public async Task<IActionResult> Index()
         {
-            QLHangHoaContext _context =new QLHangHoaContext();
             var qLHangHoaContext = _context.HangHoas.Include(h => h.MaLoaiNavigation);
             return View(await qLHangHoaContext.ToListAsync());
         }
@@ -25,7 +24,6 @@ namespace VuTheNguyen_211201947.Controllers
         // GET: HangHoas/Create
         public IActionResult Create()
         {
-            QLHangHoaContext _context = new QLHangHoaContext();
             ViewData["MaLoai"] = new SelectList(_context.LoaiHangs, "MaLoai", "TenLoai");
             return View();
         }
@@ -35,9 +33,10 @@ namespace VuTheNguyen_211201947.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("MaLoai,TenHang,Gia,Anh")] HangHoa hangHoa)
+        public async Task<IActionResult> Create([Bind("MaLoai","TenHang","Gia","Anh")] HangHoa hangHoa)
         {
-            QLHangHoaContext _context = new QLHangHoaContext();
+            
+           
             if (ModelState.IsValid)
             {
                 _context.Add(hangHoa);
