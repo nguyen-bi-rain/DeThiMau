@@ -41,5 +41,18 @@
                 }
             })
         })
+        $('#btnSearch').on('click', function (e) {
+            e.preventDefault()
+            var text = $('#searchText').val()
+            alert(text)
+            $.ajax({
+                url: "/Home/Search",
+                data: {search : text},
+                success : function(res){
+                    $('#contentView').html(res)
+                }
+            })
+        })
     </script>
+    
 }

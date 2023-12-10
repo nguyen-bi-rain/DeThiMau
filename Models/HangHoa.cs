@@ -13,6 +13,7 @@ namespace VuTheNguyen_211201947.Models
         [Required]
         public string? TenHang { get; set; } = null!;
         [Range(100,5000,ErrorMessage = "Gia phai nam trong khoang 100 - 5000")]
+        [RegularExpression("^\\d+$")]
         public decimal? Gia { get; set; }
         [RegularExpression("/.(jpg|png|gif|tiff)$")]
         [Required]

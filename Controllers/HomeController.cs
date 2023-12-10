@@ -113,7 +113,13 @@ namespace VuTheNguyen_211201947.Controllers
             ViewBag.PageNum = pageNum;
             var res = learners.Skip(pageSize * (page - 1)).Take(pageSize).Include(m => m.MaLoaiNavigation);
             return PartialView("MatHang", res);
-
+            
+        }
+        public IActionResult Search(string? search)
+        {
+            QLHangHoaContext db = new QLHangHoaContext();
+            var list = db.HangHoas.Where(m => m.TenHang.ToLower().Contains(search.ToLower())).ToList();
+            return PartialView("MatHang", list);
         }
     }
 }
